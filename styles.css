@@ -1,11 +1,86 @@
+body,
 html {
   width: 100%;
   height: 100%;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: "Handlee", cursive;
   background: url(./assets/writing_desk_birds_eye_view_small.jpeg) no-repeat
     center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+}
+
+h1 {
+  font-size: 3rem;
+  color: white;
+  background-color: rgba(1, 1, 1, 0.3);
+  border-radius: 300px;
+  margin: 0;
+  padding-top: 5px;
+}
+
+hr {
+  border-color: #527d74;
+  border-width: 3px;
+  max-width: 65px;
+}
+
+.buffer {
+  height: 3rem;
+}
+
+.btn {
+  font-weight: 700;
+  border-radius: 300px;
+  text-transform: uppercase;
+}
+
+.btn-primary {
+  background-color: #527d74;
+  border-color: #527d74;
+}
+
+.btn-primary:hover {
+  background-color: #3b5a54;
+  border-color: #3b5a54;
+  border-width: 4px;
+}
+
+.btn-primary:active {
+  background-color: #3b5a54;
+  border-color: #3b5a54;
+  border-width: 4px;
+}
+
+.btn-xl {
+  padding: 1rem 2rem;
+}
+
+.imgRow img {
+  /* width: 400px;
+  height: 550px; */
+  width: 100%;
+  transition: all 0.5s;
+  box-shadow: 4px 4px 5px #555555;
+  margin-bottom: 10px;
+}
+
+.nopadding {
+  padding: 0 !important;
+  /* margin: 0 !important; */
+}
+
+img:hover {
+  transform: scale(1.025);
+  /* width: 400px;
+  height: 550px; */
+  margin-top: 10px;
+}
+
+.imageContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background: #52525281;
 }

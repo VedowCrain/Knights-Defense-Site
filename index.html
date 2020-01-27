@@ -1,43 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
-
-    <link
-      href="https://fonts.googleapis.com/css?family=Handlee&display=swap"
-      rel="stylesheet"
-    />
-
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="./styles.css" />
-    <title>Knights Defense</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.2/particles.min.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+    <link rel="stylesheet" href="styles.css" />
+    <title>Document</title>
   </head>
   <body>
-    <div class="container d-flex align-items-center justify-content-center h-100">
-      <div class="row">
-        <header class="text-center col-12">
-          <h1 class="text-uppercase">
-            <strong>Knights Defense</strong>
-          </h1>
-        </header>
-        <div class="buffer col-12"></div>
-        <section class="text-center col-12">
-          <hr />
-          <a href="./Info.html">
-            <button class="btn btn-primary btn-xl">Find out more</button>
-          </a>
-        </section>
+    <div class="navbar">
+      <div class="navLogo">
+        <a href="./index.html"
+          ><img src="./assets/Knight Defense/SVG/Pandora's Box.svg" alt=""/></a
+        >Pandora's Box
+      </div>
+      <div class="links">
+        <a href="">About</a>
+        <a href="">Comunication</a>
+        <a href="">Documentation</a>
+        <a href="">Video</a>
       </div>
     </div>
+      <div id="scene">
+        <div data-depth="0" class="lvl_1"></div>
+        <div data-depth="0.2" class="lvl_2"></div>
+        <div data-depth="0.3" class="lvl_3"></div>
+        <div data-depth="0.4" class="lvl_4"></div>
+        <div data-depth="0.5" class="lvl_5"></div>
+        <div data-depth="0.6" class="lvl_6"></div>
+        <div class="heading container">Knight of Old</div>
+      </div>
+
+    <script>
+      window.onload = function() {
+        var scene = document.getElementById("scene");
+        var parallaxInstance = new Parallax(scene);
+      };
+    </script>
+
+    <!-- <script>
+      window.onload = function() {
+        Particles.init({
+          selector: ".part",
+          color: "#FFFFFF"
+        });
+      };
+    </script>
+
+    <canvas class="part"></canvas> -->
   </body>
 </html>
-<!DOCTYPE html>

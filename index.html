@@ -1,11 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.2/particles.min.js"></script> -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.2/particles.min.js"></script> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+    <script
+      type="text/javascript"
+      src="./turnjs4/extras/jquery.min.1.7.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="./turnjs4/extras/modernizr.2.5.3.min.js"
+    ></script>
     <link rel="stylesheet" href="styles.css" />
     <title>Document</title>
   </head>
@@ -17,25 +25,92 @@
         >Pandora's Box
       </div>
       <div class="links">
-        <a href="">About</a>
+        <a href="Info.html">About</a>
         <a href="">Comunication</a>
         <a href="">Documentation</a>
         <a href="">Video</a>
       </div>
     </div>
-      <div id="scene">
-        <div data-depth="0" class="lvl_1"></div>
-        <div data-depth="0.2" class="lvl_2"></div>
-        <div data-depth="0.3" class="lvl_3"></div>
-        <div data-depth="0.4" class="lvl_4"></div>
-        <div data-depth="0.5" class="lvl_5"></div>
-        <div data-depth="0.6" class="lvl_6"></div>
-        <div class="heading container">Knight of Old</div>
+    <div id="scene">
+    </div>
+    <div class="container contentCenter">
+      <div class="book">
+        <div class="flipbook" id="flipbook">
+        </div>
       </div>
+    </div>
+
+    <script type="text/javascript" src="./js/genImages.js"></script>
+    <script type="text/javascript">
+      function loadApp() {
+        // Create the flipbook
+
+        $(".flipbook").turn({
+          width: 922,
+          height: 600,
+          elevation: 50,
+          gradients: true,
+          autoCenter: true
+        });
+      }
+
+      // Load the HTML4 version if there's not CSS transform
+
+      yepnope({
+        test: Modernizr.csstransforms,
+        yep: ["./turnjs4/lib/turn.js"],
+        nope: ["./turnjs4/lib/turn.html4.min.js"],
+        complete: loadApp
+      });
+    </script>
 
     <script>
+      // var config = [
+      //   { depth: "0", class: "lvl_0" },
+      //   { depth: "0.05", class: "lvl_1" },
+      //   { depth: "-0.05", class: "lvl_2" },
+      //   { depth: "0.1", class: "lvl_3" },
+      //   { depth: "0.15", class: "lvl_4" },
+      //   { depth: "0.25", class: "lvl_5" },
+      //   { depth: "0.2", class: "lvl_6" },
+      //   { depth: "0.15", class: "lvl_7" },
+      //   { depth: "0.3", class: "lvl_8" },
+      //   { depth: "0.25", class: "lvl_9" },
+      //   { depth: "0.2", class: "lvl_10" },
+      //   { depth: "0.15", class: "lvl_11" }
+      // ];
+
+      var depths = [
+        "0",
+        "0.05",
+        "-0.05",
+        "0.1",
+        "0.15",
+        "0.25",
+        "0.2",
+        "0.15",
+        "0.3",
+        "0.25",
+        "0.2",
+        "0.15"
+      ];
+
+      function initPara(parentNode) {
+        depths.forEach((layer,index) => {
+          var layerElement = document.createElement("div");
+          layerElement.setAttribute("data-depth", layer);
+          layerElement.className = 'lvl_'+ index;
+          parentNode.appendChild(layerElement);
+        });
+        var header = document.createElement('div')
+        header.className = "heading vignette"
+        header.innerText = "Knight of Old"
+        parentNode.appendChild(header)
+      }
+
       window.onload = function() {
         var scene = document.getElementById("scene");
+        initPara(scene);
         var parallaxInstance = new Parallax(scene);
       };
     </script>
@@ -47,8 +122,6 @@
           color: "#FFFFFF"
         });
       };
-    </script>
-
-    <canvas class="part"></canvas> -->
+    </script> -->
   </body>
 </html>

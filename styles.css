@@ -144,7 +144,7 @@ h2 {
 }
 
 .book {
-  width: 960px;
+  width: 828px;
   height: 540px;
   margin-top: 50px;
 }
@@ -163,15 +163,15 @@ h2 {
 }
 
 .flipbook-viewport .flipbook {
-  width: 922px;
-  height: 600px;
-  left: -461px;
-  top: -300px;
+  width: 828px;
+  height: 585px;
+  left: -414px;
+  top: -585px;
 }
 
 .flipbook-viewport .page {
-  width: 461px;
-  height: 600px;
+  width: 414px;
+  height: 585px;
   background-color: white;
   background-repeat: no-repeat;
   background-size: 100% 100%;
@@ -245,6 +245,15 @@ h2 {
   background: url(./assets/Parralax-background/lvl-11-01.png);
 }
 
+.page {
+  background-size: cover;
+  width: 414px !important;
+  height: 585px !important;
+}
+
+.flipbook{
+  width: 820px !important;
+}
 /* .part {
   position: absolute;
 

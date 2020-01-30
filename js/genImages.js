@@ -7,6 +7,7 @@ function imgGen() {
   imgNums.forEach(num => {
     var element = document.createElement("div");
     element.style.background = `url(./assets/knight_Defense/kd_Doc_${num}.jpg)`;
+    element.style.backgroundSize = "cover";
     element.className = "page";
     flipbook.appendChild(element);
   });

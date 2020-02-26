@@ -1,269 +1,276 @@
-a {
-  text-decoration: none;
-  color: white;
-  font-family: Endor Alt, Helvetica, sans-serif;
-  transition: all 0.3s ease;
-}
-
-a:hover {
-  opacity: 0.8;
-}
-
-body {
-  margin: 0;
-  background: rgb(59, 59, 59);
-}
-
-.background {
-  background: url(./assets/Wood_plancks_005_4K_COLOR.jpg);
-  background-repeat: repeat;
-  background-size: 800px;
-  margin: 0;
-  padding: 0;
+* {
+  margin: 0px;
+  padding: 0px;
 }
 
 .navbar {
-  display: grid;
-  min-height: 60px;
-  grid-auto-flow: column;
-  background: linear-gradient(
-    180deg,
-    rgba(40, 40, 40, 1) 0%,
-    rgb(59, 59, 59) 80%
-  );
-  box-shadow: rgba(0, 0, 0, 0.541);
-  grid-gap: 20px;
-  padding: 0 30px;
+  background-color: #464646;
+  width: 100vw;
+  height: 50px;
+  position: fixed;
+  z-index: 22;
 }
 
-.logo {
-  display: grid;
-  justify-content: center;
-  align-content: center;
-  font-size: 4rem;
-  font-family: Endor Alt, Helvetica, sans-serif;
+.icon {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+
+.title {
+  margin-right: 10em;
+}
+
+.nav-title {
   color: white;
-}
-
-.navLogo {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  font-size: 4rem;
-  font-family: Endor Alt, Helvetica, sans-serif;
-  color: white;
-  margin: 5px 0px;
-}
-
-.navLogo > a {
-  height: 3.5rem;
-  margin-right: 15px;
+  font-family: Endor Alt;
+  font-size: 50px;
 }
 
 .links {
-  display: grid;
-  justify-content: center;
-  align-content: center;
-  grid-auto-flow: column;
-  grid-gap: 20px;
-  font-size: 2rem;
   color: white;
+  font-family: Endor Alt;
+  font-size: 20px;
 }
 
-.gradientTop {
-  background: linear-gradient(
-    0deg,
-    rgba(255, 255, 255, 0) 0%,
-    rgba(0, 0, 0, 1) 100%
-  );
+.links > h2 {
+  margin-right: 15px;
 }
 
-.vignette {
-  background: radial-gradient(
-    circle,
-    rgba(255, 255, 255, 0) 20%,
-    rgba(0, 0, 0, 1) 90%
-  );
+.links > h2 > a {
+  color: white;
+  text-decoration: none;
 }
 
-.heading {
+.links > h2 > a:hover {
+  color: rgb(202, 202, 202);
+  text-decoration: underline;
+}
+
+.landing-img {
+  width: 100vw;
+  height: 55em;
+  color: antiquewhite;
+  background: url(./assets/Image_Assets/Floating_Island.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.align-center {
   display: flex;
   justify-content: center;
-  font-size: 10rem;
-  font-family: Endor Alt, Helvetica, sans-serif;
-  color: white;
+  align-items: center;
+}
+.scroll-body {
+  background: url(./assets/Image_Assets/Wood_plancks_005_4K_COLOR.jpg);
+  background-size: contain;
   text-align: center;
+  padding: 20px;
 }
 
-#fixed {
-  position: fixed;
-  height: 100vh;
+.torn-paper {
+  background: url(./assets/Image_Assets/torn-old-paper-banner-10.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 10px 50px;
+  width: 30em;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
 }
 
-#fake {
-  height: 900px;
+.torn-paper > h2 {
+  font-family: Endor Alt;
+  font-size: 50px;
+  margin: 10px 0px;
+  padding-bottom: 5px;
+  border-bottom: solid black 3px;
+  border-top: solid black 3px;
 }
 
-#scene {
-  overflow: hidden;
+.torn-paper > p {
+  font-family: Adler;
+  font-size: 15px;
 }
 
-#scene > div {
-  display: flex;
-  justify-content: center;
-  height: 100vh;
-  width: 100%;
-  background-size: cover !important;
-}
-
-p {
-  font-size: 2rem;
-  font-family: Adler, Helvetica, sans-serif;
+.status {
+  background: #121e1e;
+  font-family: Endor Alt;
   color: white;
-  text-align: center;
-}
-
-h2 {
-  font-size: 5rem;
-  font-family: Endor Alt, Helvetica, sans-serif;
-  color: white;
-  text-align: center;
-  padding: 0;
-  margin: 0;
-}
-
-.contentCenter {
-  display: flex;
-  justify-content: center;
-}
-
-.container {
-  width: 100%;
-  height: 1000px;
+  width: 125px;
+  height: 35px;
+  border-radius: 5px;
+  transform: translateX(474px) rotate(-5deg) translateY(-13px);
 }
 
 .book {
-  width: 828px;
-  height: 540px;
-  margin-top: 50px;
-}
-
-.flipbook-viewport {
-  overflow: hidden;
-  width: 100%;
-  height: 100%;
-}
-
-.flipbook-viewport .container {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  margin: auto;
-}
-
-.flipbook-viewport .flipbook {
-  width: 828px;
-  height: 585px;
-  left: -414px;
-  top: -585px;
-}
-
-.flipbook-viewport .page {
-  width: 414px;
-  height: 585px;
-  background-color: white;
+  margin-top: 10px;
+  background: url(./assets/Image_Assets/book-cover.png);
+  background-size: contain;
   background-repeat: no-repeat;
-  background-size: 100% 100%;
-}
-
-.flipbook .page {
-  -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-  -moz-box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-  -ms-box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-  -o-box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-}
-
-.flipbook-viewport .page img {
-  -webkit-touch-callout: none;
-  -webkit-user-select: none;
-  -khtml-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  margin: 0;
-}
-
-.flipbook-viewport .shadow {
-  -webkit-transition: -webkit-box-shadow 0.5s;
-  -moz-transition: -moz-box-shadow 0.5s;
-  -o-transition: -webkit-box-shadow 0.5s;
-  -ms-transition: -ms-box-shadow 0.5s;
-
-  -webkit-box-shadow: 0 0 20px #ccc;
-  -moz-box-shadow: 0 0 20px #ccc;
-  -o-box-shadow: 0 0 20px #ccc;
-  -ms-box-shadow: 0 0 20px #ccc;
-  box-shadow: 0 0 20px #ccc;
-}
-
-#scene > .lvl_0 {
-  background: url(./assets/Parralax-background/lvl-0-01.png);
-}
-#scene > .lvl_1 {
-  background: url(./assets/Parralax-background/lvl-1-01.png);
-}
-#scene > .lvl_2 {
-  background: url(./assets/Parralax-background/lvl-2-01.png);
-}
-#scene > .lvl_3 {
-  background: url(./assets/Parralax-background/lvl-3-01.png);
-}
-#scene > .lvl_4 {
-  background: url(./assets/Parralax-background/lvl-4-01.png);
-}
-#scene > .lvl_5 {
-  background: url(./assets/Parralax-background/lvl-5-01.png);
-}
-#scene > .lvl_6 {
-  background: url(./assets/Parralax-background/lvl-6-01.png);
-}
-#scene > .lvl_7 {
-  background: url(./assets/Parralax-background/lvl-7-01.png);
-}
-#scene > .lvl_8 {
-  background: url(./assets/Parralax-background/lvl-8-01.png);
-}
-#scene > .lvl_9 {
-  background: url(./assets/Parralax-background/lvl-9-01.png);
-}
-#scene > .lvl_10 {
-  background: url(./assets/Parralax-background/lvl-10-01.png);
-}
-#scene > .lvl_11 {
-  background: url(./assets/Parralax-background/lvl-11-01.png);
+  width: 37em;
+  height: 27em;
 }
 
 .page {
+  background: url(./assets/Image_Assets/paper6.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 35em;
+  height: 26em;
+  margin-bottom: 5px;
+}
+
+.leaf-5 {
+  width: 250px;
+  height: 250px;
+  transform: rotate(-45deg) translateY(524px) translateX(98px);
+}
+
+.leaf-22 {
+  width: 300px;
+  height: 200px;
+  transform: rotate(-56deg) translateY(-431px) translateX(-136px);
+}
+
+.sand > img {
+  width: 300px;
+  height: 120px;
+  transform: translateX(-100px);
+}
+
+.clipboard {
+  margin-top: 65px;
+  margin-right: 0px;
+  width: 37em;
+  height: 38em;
+}
+
+.paper-page {
+  background: url(./assets/Image_Assets/old_paper.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 24em;
+  height: 35em;
+  padding: 15px;
+  transform: translateX(150px);
+}
+
+.paper-page > p {
+  font-family: Adler;
+  font-size: 15px;
+  color: #2a1500;
+  transform: translateY(400px);
+  line-height: 24px;
+}
+
+.paper-clip-page-background {
+  background: url(./assets/Image_Assets/Floating_Island.png);
   background-size: cover;
-  width: 414px !important;
-  height: 585px !important;
-}
-
-.flipbook{
-  width: 820px !important;
-}
-/* .part {
-  position: absolute;
-
-  display: block;
-  width: 100%;
-  height: 100%;
-
-  top: 0;
-
-  left: 0;
-
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 19em;
+  height: 19em;
+  transform: translateY(-616px) translateX(290px);
   z-index: 0;
-} */
+}
+
+.paper-clip-page {
+  background: url(./assets/Image_Assets/photo3.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 34em;
+  height: 26em;
+  transform: translateY(-972px) translateX(78px);
+  z-index: 1;
+}
+
+.info-board {
+  padding: 15px;
+  transform: translateY(-1366px);
+  background: #121e1e;
+  border-radius: 5px;
+  height: 25em;
+  width: 16em;
+}
+
+.info-board > h2 {
+  font-family: Endor Alt;
+  color: white;
+  font-size: 60px;
+  margin-bottom: 30px;
+}
+
+.info-board > p {
+  font-family: Adler;
+  font-size: 15px;
+  color: white;
+}
+
+.coffee-stains {
+  transform: translateY(-200px);
+}
+
+.stain-1 {
+  background: url(./assets/Image_Assets/4-coffee-splash-splatter-3.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 10em;
+  height: 10em;
+  transform: translateX(-60px);
+}
+
+.stain-2 {
+  background: url(./assets/Image_Assets/4-coffee-splash-splatter-1.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 14em;
+  height: 11em;
+  transform: translateY(180px) translateX(-139px);
+}
+
+.stain-3 {
+  background: url(./assets/Image_Assets/4-coffee-splash-splatter-2.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 15em;
+  height: 10em;
+  transform: translateY(122px);
+}
+
+.about > h2 {
+  font-family: Endor Alt;
+  color: white;
+  font-size: 80px;
+  margin-bottom: 30px;
+}
+
+.about > p {
+  font-family: Adler;
+  font-size: 15px;
+  line-height: 24px;
+  color: white;
+}
+
+.about {
+  background: #666666;
+  border-radius: 5px;
+  padding: 10px;
+  width: 20em;
+  height: 30em;
+  transform: translateX(290px);
+}
+
+.coffee-ring {
+  background: url(./assets/Image_Assets/coffee-stain-2-6.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 30em;
+  height: 18em;
+  transform: translateY(-460px);
+}
+
+.about-div{
+  transform: translateY(-70px);
+}

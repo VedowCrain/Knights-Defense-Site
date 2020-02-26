@@ -1,127 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.2/particles.min.js"></script> -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
-    <script
-      type="text/javascript"
-      src="./turnjs4/extras/jquery.min.1.7.js"
-    ></script>
-    <script
-      type="text/javascript"
-      src="./turnjs4/extras/modernizr.2.5.3.min.js"
-    ></script>
-    <link rel="stylesheet" href="styles.css" />
-    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <title>Knights Defense</title>
   </head>
   <body>
-    <div class="navbar">
-      <div class="navLogo">
-        <a href="./index.html"
-          ><img src="./assets/Knight Defense/SVG/Pandora's Box.svg" alt=""/></a
-        >Pandora's Box
+    <header class="navbar align-center">
+      <div class="title align-center">
+        <img class="icon" src="./assets/Image_Assets/Pandora's Box Icon.svg" alt="svg missing">
+        <h1 class="nav-title">Pandora's Box</h1>
       </div>
-      <div class="links">
-        <a href="Info.html">About</a>
-        <a href="">Comunication</a>
-        <a href="">Documentation</a>
-        <a href="">Video</a>
+      <div class="links align-center">
+        <h2><a href="">About</a></h2>
+        <h2><a href="">Comunication</a></h2>
+        <h2><a href="">Documentation</a></h2>
+        <h2><a href="">Video</a></h2>
       </div>
+    </header>
+    <div class="landing-img">
+      
     </div>
-    <div id="scene">
-    </div>
-    <div class="container contentCenter">
-      <div class="book">
-        <div class="flipbook" id="flipbook">
+    <div class="scroll-body align-center">
+      <div>
+        <div class="torn-paper">
+          <h2>The Shattered Islands of Pandora</h2>
+          <p>Knight of Old takes place on one of the
+            Many floating islands of Pandora...
+            Begin your Journey in this world on a
+            flying ship long lost to time.
+          </p>
+        </div>
+        <div class="status align-center">
+          <h2>Under Development</h2>
+        </div>
+        <div class="book align-center">
+          <div class="page">
+            <img class="leaf-5" src="./assets/Image_Assets/leaf-5.png" alt="">
+            <img class="leaf-22" src="./assets/Image_Assets/leaf-22.png" alt="">
+          </div>
+        </div>
+        <div class="sand">
+          <img src="./assets/Image_Assets/30689-3-sand-photos.png" alt="">
+        </div>
+        <div class="clipboard">
+          <div class="paper-page">
+            <p>Be Sure to Check out the preAlpha Planning for the
+              game as well as gameplay of the first version of the game.
+              The game has had many different versions since the
+              recording of the video including a name change.</p>
+          </div>
+          <div class="paper-clip-page-background"></div>
+          <div class="paper-clip-page">
+          </div>
+          <div class="info-board">
+            <h2>INSPIRATION</h2>
+            <p>
+              Having a world that floats
+              amongst the clouds allows for its
+              own unique challenges but allows
+              for the imagination to run wild
+              of the wildlife that would
+              inhabit such a planet.</p>
+              <br>
+              <p>Movies such as Treasure Planet
+              and avatar where a huge inspiration
+              to the forms of transport and wildlife
+              that the world would have
+              and Avatar is the inspiration for
+              the islands themselves.</p>
+          </div>
+        </div>
+        <div class="coffee-stains align-center">
+          <div class="stain-1"></div>
+          <div class="stain-2"></div>
+          <div class="stain-3"></div>
+        </div>
+
+        <div class="about-div">
+          <div class="about">
+            <h2>About</h2>
+            <p>I am a solo indie developer. I studied at
+              Emendy collage in Pretoria South Africa.
+              I worked as a junior game developer 
+              at BigBrave and Studied Web Development
+              and Graphic Design While Under there
+              employment. This project has been
+              my passion project since graduating
+              Highschool and Collage.
+              I am not old a game Developer in the
+              digital Space I am also a
+              a Dungeon Master for a popular table top
+              game called Dungeons and Dragons</p>
+          </div>
+          <div class="coffee-ring"></div>
         </div>
       </div>
     </div>
-
-    <script type="text/javascript" src="./js/genImages.js"></script>
-    <script type="text/javascript">
-      function loadApp() {
-        // Create the flipbook
-
-        $(".flipbook").turn({
-          width: 922,
-          height: 600,
-          elevation: 50,
-          gradients: true,
-          autoCenter: true
-        });
-      }
-
-      // Load the HTML4 version if there's not CSS transform
-
-      yepnope({
-        test: Modernizr.csstransforms,
-        yep: ["./turnjs4/lib/turn.js"],
-        nope: ["./turnjs4/lib/turn.html4.min.js"],
-        complete: loadApp
-      });
-    </script>
-
-    <script>
-      // var config = [
-      //   { depth: "0", class: "lvl_0" },
-      //   { depth: "0.05", class: "lvl_1" },
-      //   { depth: "-0.05", class: "lvl_2" },
-      //   { depth: "0.1", class: "lvl_3" },
-      //   { depth: "0.15", class: "lvl_4" },
-      //   { depth: "0.25", class: "lvl_5" },
-      //   { depth: "0.2", class: "lvl_6" },
-      //   { depth: "0.15", class: "lvl_7" },
-      //   { depth: "0.3", class: "lvl_8" },
-      //   { depth: "0.25", class: "lvl_9" },
-      //   { depth: "0.2", class: "lvl_10" },
-      //   { depth: "0.15", class: "lvl_11" }
-      // ];
-
-      var depths = [
-        "0",
-        "0.05",
-        "-0.05",
-        "0.1",
-        "0.15",
-        "0.25",
-        "0.2",
-        "0.15",
-        "0.3",
-        "0.25",
-        "0.2",
-        "0.15"
-      ];
-
-      function initPara(parentNode) {
-        depths.forEach((layer,index) => {
-          var layerElement = document.createElement("div");
-          layerElement.setAttribute("data-depth", layer);
-          layerElement.className = 'lvl_'+ index;
-          parentNode.appendChild(layerElement);
-        });
-        var header = document.createElement('div')
-        header.className = "heading vignette"
-        header.innerText = "Knight of Old"
-        parentNode.appendChild(header)
-      }
-
-      window.onload = function() {
-        var scene = document.getElementById("scene");
-        initPara(scene);
-        var parallaxInstance = new Parallax(scene);
-      };
-    </script>
-
-    <!-- <script>
-      window.onload = function() {
-        Particles.init({
-          selector: ".part",
-          color: "#FFFFFF"
-        });
-      };
-    </script> -->
   </body>
 </html>

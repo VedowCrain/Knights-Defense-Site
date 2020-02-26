@@ -51,7 +51,7 @@
   width: 100vw;
   height: 55em;
   color: antiquewhite;
-  /* background: url(./assets/Image_Assets/Floating_Island.png); */
+  background: url(./assets/Image_Assets/Floating_Island.png);
   background-size: cover;
   background-position: center;
 }
@@ -62,6 +62,8 @@
   align-items: center;
 }
 .scroll-body {
+  background: url(./assets/Image_Assets/Wood_plancks_005_4K_COLOR.jpg);
+  background-size: contain;
   text-align: center;
   padding: 20px;
 }
@@ -132,8 +134,14 @@
   transform: rotate(-56deg) translateY(-431px) translateX(-136px);
 }
 
+.sand > img {
+  width: 300px;
+  height: 120px;
+  transform: translateX(-100px);
+}
+
 .clipboard {
-  margin-top: 180px;
+  margin-top: 65px;
   margin-right: 0px;
   width: 37em;
   height: 38em;
@@ -153,7 +161,8 @@
   font-family: Adler;
   font-size: 15px;
   color: #2a1500;
-  transform: translateY(435px);
+  transform: translateY(400px);
+  line-height: 24px;
 }
 
 .paper-clip-page-background {
@@ -197,4 +206,71 @@
   font-family: Adler;
   font-size: 15px;
   color: white;
+}
+
+.coffee-stains {
+  transform: translateY(-200px);
+}
+
+.stain-1 {
+  background: url(./assets/Image_Assets/4-coffee-splash-splatter-3.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 10em;
+  height: 10em;
+  transform: translateX(-60px);
+}
+
+.stain-2 {
+  background: url(./assets/Image_Assets/4-coffee-splash-splatter-1.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 14em;
+  height: 11em;
+  transform: translateY(180px) translateX(-139px);
+}
+
+.stain-3 {
+  background: url(./assets/Image_Assets/4-coffee-splash-splatter-2.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 15em;
+  height: 10em;
+  transform: translateY(122px);
+}
+
+.about > h2 {
+  font-family: Endor Alt;
+  color: white;
+  font-size: 80px;
+  margin-bottom: 30px;
+}
+
+.about > p {
+  font-family: Adler;
+  font-size: 15px;
+  line-height: 24px;
+  color: white;
+}
+
+.about {
+  background: #666666;
+  border-radius: 5px;
+  padding: 10px;
+  width: 20em;
+  height: 30em;
+  transform: translateX(290px);
+}
+
+.coffee-ring {
+  background: url(./assets/Image_Assets/coffee-stain-2-6.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 30em;
+  height: 18em;
+  transform: translateY(-460px);
+}
+
+.about-div{
+  transform: translateY(-70px);
 }

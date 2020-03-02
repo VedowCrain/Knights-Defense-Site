@@ -107,7 +107,7 @@
 
 .book {
   margin-top: 10px;
-  background: url(./assets/Image_Assets/book-cover.png);
+  background: url(./assets/Image_Assets/book-cover.jpg);
   background-size: contain;
   background-repeat: no-repeat;
   width: 37em;
@@ -115,7 +115,7 @@
 }
 
 .page {
-  background: url(./assets/Image_Assets/paper6.png);
+  background: url(./assets/Image_Assets/paper6.jpg);
   background-size: contain;
   background-repeat: no-repeat;
   width: 35em;
@@ -425,7 +425,7 @@
 }
 
 .map-book {
-  background: url(../Knights-Defense-Site/assets/Image_Assets/paper9.png);
+  background: url(../Knights-Defense-Site/assets/Image_Assets/paper9.jpg);
   background-size: contain;
   background-repeat: no-repeat;
   width: 40em;

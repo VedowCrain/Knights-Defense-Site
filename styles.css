@@ -299,25 +299,28 @@
 }
 
 .card-1 {
-  background: url(./assets/Image_Assets/photo1.png);
+  background: url(./assets/Image_Assets/old_paper.png);
   background-size: contain;
   background-repeat: no-repeat;
   width: 10em;
   height: 13em;
+  transform: rotateZ(-15deg);
 }
 .card-2 {
-  background: url(./assets/Image_Assets/photo1.png);
+  background: url(./assets/Image_Assets/old_paper.png);
   background-size: contain;
   background-repeat: no-repeat;
   width: 10em;
   height: 13em;
+  transform: rotateZ(5deg);
 }
 .card-3 {
-  background: url(./assets/Image_Assets/photo1.png);
+  background: url(./assets/Image_Assets/old_paper.png);
   background-size: contain;
   background-repeat: no-repeat;
   width: 10em;
   height: 13em;
+  transform: rotateZ(15deg);
 }
 
 .top-cards {
@@ -329,25 +332,118 @@
 }
 
 .card-1 > h1 {
-  transform: translate(0px, 145px);
+  transform: translate(-15px, 145px);
   font-family: Adler;
-  font-size: 23px;
-  line-height: 24px;
+  font-size: 12px;
+  line-height: 45px;
   color: #2a1500;
+  align-items: center;
+  z-index: 1;
 }
 
 .card-2 > h1 {
-  transform: translate(0px, 145px);
+  transform: translate(-15px, 145px);
   font-family: Adler;
-  font-size: 23px;
-  line-height: 24px;
+  font-size: 12px;
+  line-height: 45px;
   color: #2a1500;
+  align-items: center;
+  z-index: 1;
 }
 
 .card-3 > h1 {
-  transform: translate(0px, 145px);
+  transform: translate(-15px, 145px);
   font-family: Adler;
-  font-size: 23px;
-  line-height: 24px;
+  font-size: 12px;
+  line-height: 45px;
   color: #2a1500;
+  align-items: center;
+  z-index: 1;
+}
+
+.paper-back {
+  background: url(../Knights-Defense-Site/assets/Image_Assets/photo1.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  z-index: -1;
+  width: 105%;
+  height: 105%;
+  transform: translate(0px, -47px);
+}
+
+.paper-back > img {
+  width: 70px;
+  height: 70px;
+  transform: translate(-25px, 40px);
+}
+.documentation {
+  transform: translateY(-340px);
+}
+
+.doc-info {
+  padding: 15px;
+  transform: translateY(0px);
+  background: #121e1e;
+  border-radius: 5px;
+  height: 25em;
+  width: 16em;
+  transform: translate(340px, -570px) rotate(-5deg);
+}
+
+.doc-info > h2 {
+  font-family: Endor Alt;
+  color: white;
+  font-size: 50px;
+  margin-bottom: 30px;
+}
+
+.doc-info > p {
+  font-family: Adler;
+  font-size: 12px;
+  line-height: 25px;
+  color: white;
+}
+
+.doc-header {
+  padding: 15px;
+  background: #666666;
+  border-radius: 5px;
+  height: 25em;
+  width: 16em;
+  width: 125px;
+  height: 35px;
+  border-radius: 5px;
+  transform: translateX(45px) translateY(10px);
+}
+
+.doc-header > h1 {
+  font-family: Endor Alt;
+  color: white;
+  font-size: 50px;
+  margin-bottom: 30px;
+  transform: translate(0px, -9px);
+}
+
+.map-book {
+  background: url(../Knights-Defense-Site/assets/Image_Assets/paper9.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 40em;
+  height: 30em;
+  transform: translateY(260px) rotate(5deg);
+}
+
+.script-paper {
+  background: url(./assets/Image_Assets/old_paper.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 21em;
+  height: 30em;
+  transform: translate(260px, 1120px);
+}
+
+.script-paper > img {
+  width: 18em;
+  height: 18em;
+  transform: translate(0px, 125px);
 }
